@@ -1,81 +1,39 @@
-/* Utilities */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    text-align: center;
-    margin-bottom: 10%;
+body{
+    font-family: Fredoka One, sans-serif;
 }
 
-body{
+.container{
     width: 80%;
     margin: 0 auto;
-    font-family: "Fredoka One", serif;
 }
 
-.clearfix::after{
-    content: "";
+.crearfix::after{
+    content: '';
     clear: both;
     display: table;
 }
 
-/* Elementi */
-
-
-h1{
-    margin: 50px 0;
-    color: #921a25;
-}
-
-main::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-main{
-    display: inline-block;
-}
-
-
-.foto{
-    border-radius: 5px 0 0 5px;
-    height: 30%;
-    width: 30%;
-    padding-right: 10px;
-}
-
-.testo{
-    padding: 20px 10px 10px;
-}
-
-.card{
-    width: 30%;
-    display: inline-block;
-    background-color: black;
-    color: #fff;
-    border-radius: 5px;
-    margin: 100px 0;
-    box-shadow: 0px 0px 20px 2px red;
-    margin: 15px;
-    margin-bottom: 50px;
-}
-
-.card:hover{
-    background-color: #921a25;
-    box-shadow: 0px 0px 40px 15px green;;
-}
-    
-
-
-.elliot,.ted,.reid,.wen,.espinoza,.buckland,.roberts,.cox{
+.cards{
     float: left;
 }
 
-.carla,.perry{
+
+.card{
+    background-color: black;
+    width: calc((100% / 3) - 5%);
+}
+
+.first{
+    float: left;
+}
+
+.last{
     float: right;
 }
+
